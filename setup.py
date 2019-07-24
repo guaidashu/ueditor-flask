@@ -1,23 +1,31 @@
 """
 Create by yy on 2019-07-24
 """
+import os
+import sys
+
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding='utf-8') as fh:
-    long_description = fh.read()
+about = {}
 
-__version__ = "0.1.0"
+with open('flask_ueditor/__about__.py') as f:
+    exec(f.read(), about)
+
+if sys.argv[-1] == 'test':
+    status = os.system('make check')
+    status >>= 8
+    sys.exit(status)
 
 setup(
-    name="flask-ueditor",
-    version=__version__,
-    author="guaidashu",
-    author_email="song42960@gmail.com",
-    description="Flask ueditor Backstage, designed by yy",
-    long_description=long_description,
+    name=about['__title__'],
+    version=about['__version__'],
+    author=about['__author__'],
+    author_email=about['__author_email__'],
+    description=about['__description__'],
+    long_description=__doc__,
     long_description_content_type="text/markdown",
-    license="MIT",
-    url="https://github.com/guaidashu/ueditor-flask",
+    license=about['__license__'],
+    url=about['__url__'],
     packages=find_packages(),
     install_requires=[
         "qiniu >= 7.2.6",
