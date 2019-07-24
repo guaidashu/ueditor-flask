@@ -1,10 +1,10 @@
 """
-author songjie
+Create by yy
 """
-from app.libs.ueditor.action_map import ActionMap
-from app.libs.ueditor.base_state import BaseState
-from app.libs.ueditor.config_manager import ConfigManager
-from app.libs.ueditor.uploader import Uploader
+from .action_map import ActionMap
+from .base_state import BaseState
+from .config_manager import ConfigManager
+from .uploader import Uploader
 
 
 class Action(object):

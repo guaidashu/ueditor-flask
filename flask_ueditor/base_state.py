@@ -1,8 +1,8 @@
 """
 author songjie
 """
-from app.libs.ueditor.app_info import AppInfo
-from app.libs.ueditor.state import State
+from .app_info import AppInfo
+from .state import State
 
 
 class BaseState(State):

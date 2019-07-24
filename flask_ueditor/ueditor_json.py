@@ -1,7 +1,7 @@
 """
 author songjie
 """
-from app.libs.ueditor.state import State
+from .state import State
 
 
 class UeditorJson(State):

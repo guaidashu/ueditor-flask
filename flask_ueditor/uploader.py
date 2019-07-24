@@ -6,10 +6,10 @@ import os
 
 from flask import current_app
 
-from app.libs.ueditor.qiniuyun import QiNiuYun
-from app.libs.ueditor.base_state import BaseState
-from app.libs.ueditor.ueditor_json import UeditorJson
-from tool.lib.function import md5, get_now_time_stamp, get_date_time
+from .qiniuyun import QiNiuYun
+from .base_state import BaseState
+from .ueditor_json import UeditorJson
+from .utils import md5, get_now_time_stamp, get_date_time
 
 
 class Uploader(object):
