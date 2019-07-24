@@ -2,3 +2,5 @@
 build
 dist
 flask_ueditor.egg-info
+Pipfile
+Pipfile.lock
