@@ -24,7 +24,7 @@
 	    def ueditor_upload_image():
 	        action = Action(request, "", "static/assets/ueditor", "config.json")
 	        result = action.exec()
-	        return Response(data, mimetype="application/json;charset=utf-8")
+	        return Response(result.__dict__, mimetype="application/json;charset=utf-8")
 
 
 ## Usage
