@@ -6,3 +6,5 @@ Pipfile
 Pipfile.lock
 .idea
 .vscode
+test
+main.py

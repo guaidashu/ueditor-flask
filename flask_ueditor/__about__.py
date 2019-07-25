@@ -12,3 +12,8 @@ __author_email__ = 'song42960@gmail.com'
 __maintainer__ = 'YY blog'
 __license__ = 'MIT'
 __copyright__ = '(c) 2019 by guaidashu'
+__install_requires__ = [
+    "qiniu >= 7.2.6",
+    "requests >= 2.21.0",
+    "Flask >= 1.0.2"
+]

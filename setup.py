@@ -1,5 +1,13 @@
 """
-Create by yy on 2019-07-24
+Flask-Ueditor
+-------------
+
+Flask-Ueditor is used to accept ueditor's request from the front end.
+
+Links
+`````
+
+* `development version <https://github.com/guaidashu/ueditor-flask>`_
 """
 import os
 import sys
@@ -27,13 +35,9 @@ setup(
     license=about['__license__'],
     url=about['__url__'],
     packages=find_packages(),
-    install_requires=[
-        "qiniu >= 7.2.6",
-        "requests >= 2.21.0",
-        "Flask >= 1.0.2"
-    ],
+    install_requires=about['__install_requires__'],
     classifiers=[
-        "Topic :: components which used to coordinate ueditor to upload file.",
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.5",
