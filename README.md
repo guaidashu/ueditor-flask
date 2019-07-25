@@ -4,28 +4,27 @@
 
 1. Install
   
-  You can clone flask_ueditor from github.
+    You can clone flask_ueditor from github.
 
-  	pip install flask-ueditor
+  	    pip install flask-ueditor
   
-    git clone git@github.com:guaidashu/ueditor-flask.git
+        git clone git@github.com:guaidashu/ueditor-flask.git
    
 2. Start
 
-  Example
+    Example
 
-  	from flask_ueditor.action import Action
-	from flask import request
+  	    from flask_ueditor.action import Action
+	    from flask import request, Response
 
-	from app.api import api
-	from app.libs.reply import Reply
+	    from app.api import api
 
 
-	@api.route("/upload/ueditorUploadImage", methods=['POST', 'GET'])
-	def ueditor_upload_image():
-	    action = Action(request, "", "static/assets/ueditor", "config.json")
-	    result = action.exec()
-	    return Reply.response(result)
+	    @api.route("/upload/ueditorUploadImage", methods=['POST', 'GET'])
+	    def ueditor_upload_image():
+	        action = Action(request, "", "static/assets/ueditor", "config.json")
+	        result = action.exec()
+	        return Response(data, mimetype="application/json;charset=utf-8")
 
 
 ## Usage
