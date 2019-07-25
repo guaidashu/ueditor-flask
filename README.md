@@ -3,10 +3,12 @@
 ## Installing and Getting started
 
 1. Install
-  
-    You can clone flask_ueditor from github.
 
-  	    pip install flask-ueditor
+    The easiest way to install.
+    
+        pip install flask-ueditor
+  
+    Or you can clone source code from github.
   
         git clone git@github.com:guaidashu/ueditor-flask.git
 
