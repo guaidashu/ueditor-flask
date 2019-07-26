@@ -1,5 +1,9 @@
 # **Flask ueditor Backstage, designed by yy**
 
+[![](https://img.shields.io/github/release/guaidashu/ueditor-flask.svg)](https://github.com/guaidashu/ueditor-flask/releases)
+[![python](https://img.shields.io/badge/python-3.5-blue)](https://github.com/python)
+[![](https://img.shields.io/badge/pypi-v1.0.0-blue)]()
+[![npm](https://img.shields.io/npm/l/express.svg)]()
 
 ## Installing and Getting started
 
